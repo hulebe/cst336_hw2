@@ -1,6 +1,7 @@
 .jumbotron {
-    background-color: black;
+    background-color: orange;
     color: green;
+    font-size: 3.9em;
 }
 
 #winnings {
@@ -16,4 +17,28 @@
 .earnings li {
     list-style: none;
     color: blue;
+}
+
+img {
+    border: 5px solid black;
+}
+
+.earn {
+    background-color: green;
+    margin: 1px;
+}
+
+footer {
+    font-size: 0.8em;
+}
+
+
+body {
+    text-align: center;
+    background-color: grey;
+}
+
+button {
+    background-color:white;
+    color: black;
 }

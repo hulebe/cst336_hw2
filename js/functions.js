@@ -4,21 +4,20 @@ $(document).ready(function() {
     var winnings = 0;
     var total = 0;
     var bet = 0;
-    var slotArray = ["cherry", "seven", "bar"];
+    var slots = ["cherry", "seven", "bar"];
     
     $("button").on("click", spin); 
     
     function spin() {
         bet = $("#betField").val();
-        let slots = 3;
         
         if (bet < 1 || bet > 100){
-            $("#warning").text("Invalid bet");
+            return;
         }
         
-        let s1 = Math.floor(Math.random() * slots) + 1;
-        let s2 = Math.floor(Math.random() * slots) + 1;
-        let s3 = Math.floor(Math.random() * slots) + 1;
+        let s1 = Math.floor(Math.random() * slots.length) + 1;
+        let s2 = Math.floor(Math.random() * slots.length) + 1;
+        let s3 = Math.floor(Math.random() * slots.length) + 1;
         
         $("#p1").attr("src", `img/img${s1}.jpeg`);
         $("#p2").attr("src", `img/img${s2}.jpeg`);

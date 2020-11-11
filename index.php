@@ -35,11 +35,10 @@
         
         <br><br>
         <div class="rules">
-            <p>Rules:</p>
-            <ul>
+            <p><strong>Earnings:</strong></p>
+            <ul class="earnings">
                 <li>2 of the same icon, win 2x bet amount</li>
                 <li>3 of the same icon, win 5x bet amount</li>
-                <li>3 7's, win 10x bet amount</li>
             </ul>
         </div>
         

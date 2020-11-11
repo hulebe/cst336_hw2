@@ -28,6 +28,7 @@
             <div id="warning"></div>
             <div id="winnings"></div>
             <div id="total"></div>
+            <div id="games"></div>
         </div>
         
         

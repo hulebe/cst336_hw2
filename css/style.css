@@ -1,4 +1,14 @@
 .jumbotron {
-    background-color: orange;
+    background-color: black;
     color: green;
+}
+
+#winnings {
+    color: darkorange;
+    font-size: 1.8em;
+}
+
+#total {
+    color: darkgreen;
+    font-size: 2em;
 }

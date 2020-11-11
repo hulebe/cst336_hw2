@@ -27,7 +27,7 @@ $(document).ready(function() {
         if (s1 == s2 && s1 == s3) {
             bet = bet * 10;
             total += bet;
-            $("#winnings").html("Congrats, you trippled: " + bet);
+            $("#winnings").html("Congrats, you trippled your bet: " + bet);
             $("#total").html("Total winnings: " + total);
         } else if (s1 == s2 || s2 == s3 || s3 == s1) {
             bet = bet * 5;

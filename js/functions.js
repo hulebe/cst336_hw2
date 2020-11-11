@@ -6,6 +6,8 @@ $(document).ready(function() {
     var total = 0;
     var bet = 0;
     var count = 0;
+    var tripled = 0
+    var doubled=0;
     var slots = ["cherry", "seven", "bar"];
     
     $("button").on("click", spin); 
@@ -28,11 +30,13 @@ $(document).ready(function() {
         if (s1 == s2 && s1 == s3) {
             bet = bet * 10;
             total += bet;
+            tripled++;
             winnings++;
             winner();
         } else if (s1 == s2 || s2 == s3 || s3 == s1) {
             bet = bet * 5;
             total += bet;
+            doubled++;
             winnings++;
             smallWin();
  
@@ -41,11 +45,13 @@ $(document).ready(function() {
         }
         count++;
         
-        $("#games").html("You've won " + winnings + "/" + count + " spins.");
+        $("#win1").html("You've doubled your money " + tripled + " time(s).");
+        $("#win2").html("You've doubled your money " + doubled + " time(s).");
+        $("#games").html("You've gotten lucky " + winnings + "/" + count + " time(s).");
     }
     
     function winner() {
-        $("#winnings").html("Congrats, you trippled your bet: $" + bet);
+        $("#winnings").html("Congrats, you tripled your bet: $" + bet);
         $("#total").html("Total winnings: " + total);
     } 
 

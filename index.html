@@ -19,8 +19,14 @@
 
         <br><br>
         
+        <div id="count">
+            <div id="win1"></div>
+            <div id="win2"></div>
+            <div id="games"></div>
+        </div>
+        
         <div>
-            <label for="betField">Enter bet amount (1-100): </label>
+            <label for="betField"><strong>Enter bet amount (1-100): </strong></label>
             <input type="number" id="betField" class="betField">
             <br>
             <br>
@@ -35,7 +41,7 @@
         <br><br>
         <div class="rules">
             <div>
-                <div class="earn"><p><strong>Earnings:</strong></p></div>
+                <div class="earn"><p><strong>Multiplier:</strong></p></div>
                 <ul class="earnings">
                     <li>2 of the same icon, win 2x bet amount</li>
                     <li>3 of the same icon, win 5x bet amount</li>

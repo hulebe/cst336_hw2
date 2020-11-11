@@ -46,3 +46,8 @@ button {
 games {
     font-size:80px;
 }
+
+#count {
+    text-align: right;
+    font:italic;
+}
